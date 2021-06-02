@@ -46,9 +46,8 @@ public class OauthRestController {
 //
     @GetMapping(value="/kakao/login")
     public RedirectView kakaoConnect() {
-//        640bb23f919c524ca369ea3a51427638
-//        6bbcbb7e909f4fc6af433b29fb9cb225
-        String RestApiKey="640bb23f919c524ca369ea3a51427638";
+
+        String RestApiKey="";
         StringBuffer url = new StringBuffer();
         url.append("https://kauth.kakao.com/oauth/authorize?");
         url.append("client_id=" + RestApiKey);
