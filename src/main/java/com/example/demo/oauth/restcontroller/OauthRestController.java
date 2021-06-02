@@ -95,7 +95,7 @@ public class OauthRestController {
         final List<NameValuePair> postParams = new ArrayList<NameValuePair>();
 
         postParams.add(new BasicNameValuePair("grant_type", "authorization_code"));
-        postParams.add(new BasicNameValuePair("client_id", "6bbcbb7e909f4fc6af433b29fb9cb225")); // REST API KEY
+        postParams.add(new BasicNameValuePair("client_id", "")); // REST API KEY
         postParams.add(new BasicNameValuePair("redirect_uri", "http://localhost:8080/oauth/kakao/callback")); // 리다이렉트 URI
         postParams.add(new BasicNameValuePair("code", authorizationCode)); // 로그인 과정중 얻은 code 값
 
