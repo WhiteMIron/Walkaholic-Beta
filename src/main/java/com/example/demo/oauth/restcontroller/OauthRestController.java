@@ -66,29 +66,7 @@ public class OauthRestController {
         log.info("session:{}",session);
         log.info("response:{}",response);
 
-        //        getAccessTokenService.getAccessToken(authorizationCode);
-
-//        String code = authorizationCode;
-//        //POST방식으로 key-value 데이터를 요청(카카오쪽으로)
-//        RestTemplate rest = new RestTemplate();
-//        // 사용자 인증정보 받기 위한 세팅
-//        MultiValueMap map = new LinkedMultiValueMap<>();
-//        map.add("grant_type", "authorization_code");
-//        map.add("client_id", "6bbcbb7e909f4fc6af433b29fb9cb225");
-//        map.add("redirect_uri", "http://localhost:8080/oauth/kakao/callback");
-//        map.add("code", code);
-//
-//        HttpHeaders headers = new HttpHeaders();
-//        headers.add("Context-type", "application/json");
-//
-//        HttpEntity entity = new HttpEntity<>(map, headers);
-//
-//        // 사용자 인증정보 요청
-//        ResponseEntity res = rest.postForEntity("https://kauth.kakao.com/oauth/token", entity,OAuthToken.class);
-//
-//
-//        log.info(res.getBody().toString());
-//
+    
 
 
         final String RequestUrl = "https://kauth.kakao.com/oauth/token"; // Host
